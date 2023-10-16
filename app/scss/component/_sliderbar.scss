@@ -1,0 +1,52 @@
+.sliderbar {
+    max-width: $sliderbar-width;
+    width: 100%;
+    text-align: center;
+    z-index: $sliderbar-z-index;
+    overflow-y: scroll;
+    margin: auto;
+    padding-top: 40px;
+
+    &__container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    &__img {
+        border-radius: 50%;
+        object-fit: cover;
+        width: 200px;
+        height: 200px;
+    }
+    &__text {
+        padding-bottom: 10px;
+    }
+}
+@media (min-width: 999px) {
+    .sliderbar {
+        background-color: rgba(0, 0, 0, 0.4);
+        position: fixed;
+        max-width: $sliderbar-width;
+        width: 100%;
+        height: 80vh;
+        text-align: center;
+        border-bottom-right-radius: 20px;
+        z-index: $sliderbar-z-index;
+        overflow-y: scroll;
+
+        &__container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 10x;
+        }
+        &__img {
+            border-radius: 50%;
+            object-fit: cover;
+            width: 200px;
+            height: 200px;
+        }
+        &__text {
+            padding-bottom: 10px;
+        }
+    }
+}

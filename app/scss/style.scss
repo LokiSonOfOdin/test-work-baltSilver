@@ -1,0 +1,19 @@
+@import "./component/vars";
+@import "./component/fonts";
+@import "./component/reset";
+@import "./component/libs";
+@import "./component/global";
+@import "./component/mixin";
+@import "./component/sliderbar";
+@import "./component/header";
+@import "./component/content";
+
+main {
+    padding: 0;
+}
+@media (min-width: 999px) {
+    main {
+        padding-left: $sliderbar-width;
+        padding-top: 50px;
+    }
+}

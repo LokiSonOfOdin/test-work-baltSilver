@@ -1,0 +1,50 @@
+.content {
+    &__wrap {
+        background-color: rgb(242, 224, 202);
+        border-radius: 10px;
+    }
+    &__card {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .revers {
+        flex-direction: row-reverse;
+    }
+    &__card-title {
+        text-align: center;
+        padding: 20px 0;
+    }
+    &__card-iframe {
+        min-width: 290px;
+        width: 100%;
+        height: 80vh;
+        padding: 10px;
+        overflow-x: hidden;
+    }
+    &__card-button {
+        position: absolute;
+        padding: 10px 15px;
+        background: rgb(75, 75, 75);
+        border-radius: 20px;
+        left: 0;
+        margin: 15px;
+        color: white;
+    }
+    &__card-text {
+        width: 50%;
+        padding: 10px;
+    }
+
+    @media (max-width: 999px) {
+        .content {
+            &__card {
+                flex-wrap: wrap;
+            }
+            &__card-text {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    }
+}
