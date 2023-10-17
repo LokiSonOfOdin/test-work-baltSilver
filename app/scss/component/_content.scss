@@ -31,6 +31,12 @@
         margin: 15px;
         color: white;
     }
+        @media (min-width: 999px) {
+            .revers__btn {
+                left: 33.6%;
+            }
+    }
+
     &__card-text {
         width: 50%;
         padding: 10px;
@@ -44,6 +50,9 @@
             &__card-text {
                 width: 100%;
                 padding: 10px;
+            }
+            .revers__btn {
+                left: 33%;
             }
         }
     }
